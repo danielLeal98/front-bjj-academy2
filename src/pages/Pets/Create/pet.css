@@ -1,0 +1,16 @@
+.floating-select {
+  background: var(--greyLight);
+  color: var(--black);
+  height: 60px;
+  font-size: 20px;
+  outline: 0;
+  border: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid var(--secondary);
+  border-radius: 4px;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

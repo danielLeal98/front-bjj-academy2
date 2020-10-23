@@ -1,0 +1,41 @@
+.main{
+  height: 100vh;  
+}
+.mainError{
+  display: flex;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+  background-image: url("https://store.cloudflare.steamstatic.com/public/images/v6/home/background_spotlight.jpg");
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.imgError{  
+  width: 300px;
+  height: 300px;
+  margin-top: -55px;
+}
+.buttonBack{
+  font-family: "Mukta", sans-serif;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 16px 24px;
+  font-weight: bold;
+  font-size: 18px;
+  outline: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  color: var(--white);
+  background: none;
+  border-color: var(--white);
+  transition: opacity 0.3s;
+  margin: 20px;
+  @media (max-width: 800px) {
+    display: block;
+  }
+}

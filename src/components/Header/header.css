@@ -1,0 +1,108 @@
+/* The navigation menu */
+.navbar {
+  width: 100%;
+  z-index: 100;
+  display: block;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 1%;
+  background: var(--primary);
+  border-bottom: 3px solid var(--black);
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    font-size: calc(var(14) * 2);
+  }
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  background-color: var(--black);
+  color: white;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: none;
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a black background color on hover */
+.subnav-content a:hover {
+  background-color: var(--black);
+  color: white;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.firstDiv {
+  background-color: transparent;
+}
+img {
+  float: left;
+  width: 60px;
+  height: auto;
+  max-height: 200px;
+  max-width: 200px;
+}
